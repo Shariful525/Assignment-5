@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Best Five</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- external css file linked -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="w-9/12 mx-auto py-12 bg-gray-100">
+        <div id="top-banner" class="flex justify-between gap-28">
+            <div id="feature-img">
+            <img src="./img/image 27.jpg" alt="Kylian mbappe">
+            </div>
+
+            <div id="banner-text" class="text-center mt-28">
+                <h1 class="text-5xl font-bold mb-8">Select Your Best Five</h1>
+                <p class="font-medium">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit<br> officia consequat duis enim velit mollit. Exercitation veniam consequat sunt<br> nostrud amet.
+                </p>
+            </div>
+
+                <div id="club-logo">
+                    <img src="./img/Card-psg.jpg" alt="card-psg">
+                    <img class="football" src="./img/soccer-goal-top-png-8 4.jpg" alt="ball">
+                </div>
+        </div>
+
+            
+            </header>
+    
+    <main class="w-10/12 mx-auto mt-12">
+       <section id="player-section">
+       <div class="main-section">
+            <div class="grid grid-cols-3 gap-y-5 w-8/12">
+                <div class="f-card rounded">
+                    <img src="./img/Rectangle 144.jpg" alt="lionel messi">
+                    <h3 id="lm-10" class="messi">Lionel Messi</h3>
+                    <h4 class="ga">36 Goals | 120 Assist</h4>
+                    <button id="player-select-btn" class="select-btn hover:bg-indigo-500">SELECT</button>
+                </div>
+                <div class="f-card rounded">
+                    <img src="./img/Rectangle 144.png" alt="Neymar Junior">
+                    <h3 id="neymar" class="messi">Neymar Junior</h3>
+                    <h4 class="ga">36 Goals | 120 Assist</h4>
+                    <button id="neymar-btn" class="select-btn hover:bg-indigo-500">SELECT</button>
+                </div>
+                <div class="f-card rounded">
+                    <img src="./img/Rectangle 145.png" alt="Kiliyan Mbappe">
+                    <h3 id="mbappe" class="messi">Kiliyan Mbappe</h3>
+                    <h4 class="ga">36 Goals | 120 Assist</h4>
+                    <button id="mbappe-btn" class="select-btn hover:bg-indigo-500">SELECT</button>
+                </div>
+                <div class="f-card rounded">
+                    <img src="./img/Rectangle 185634.jpg" alt="lionel messi">
+                    <h3 id="ramos" class="messi">Sergio Ramos</h3>
+                    <h4 class="ga">36 Goals | 120 Assist</h4>
+                    <button id="ramos-btn" class="select-btn hover:bg-indigo-500">SELECT</button>
+                </div>
+                <div class="f-card rounded">
+                    <img src="./img/dimaria.jpg" alt="Angel Di Maria">
+                    <h3 id="dimaria" class="messi">Angel Di Maria</h3>
+                    <h4 class="ga">36 Goals | 120 Assist</h4>
+                    <button id="dimaria-btn" class="select-btn hover:bg-indigo-500">SELECT</button>
+                </div>
+                <div class="f-card rounded">
+                    <img src="./img/Rectangle4.png" alt="De Paul">
+                    <h3 id="paul" class="messi">De Paul</h3>
+                    <h4 class="ga">36 Goals | 120 Assist</h4>
+                    <button id="paul-btn" class="select-btn hover:bg-indigo-500">SELECT</button>
+                </div>
+                <div class="f-card rounded">
+                    <img src="./img/dybala.jpg" alt="Paulo Dybala">
+                    <h3 id="dybala" class="messi">Paulo Dybala</h3>
+                    <h4 class="ga">36 Goals | 120 Assist</h4>
+                    <button id="dybala-btn" class="select-btn hover:bg-indigo-500">SELECT</button>
+                </div>
+                <div class="f-card rounded">
+                    <img src="./img/ronaldo.jpg" alt="Cristiano Ronaldo">
+                    <h3 id="ronaldo" class="messi">Cristiano Ronaldo</h3>
+                    <h4 class="ga">36 Goals | 120 Assist</h4>
+                    <button id="ronaldo-btn" class="select-btn hover:bg-indigo-500">SELECT</button>
+                </div>
+                <div class="f-card rounded">
+                    <img src="./img/halland.jpeg" alt="Erling Halland">
+                    <h3 id="halland" class="messi">Erling Halland</h3>
+                    <h4 class="ga">36 Goals | 120 Assist</h4>
+                    <button id="halland-btn" class="select-btn hover:bg-indigo-500">SELECT</button>
+                </div>
+            </div>
+        
+            <div class="clc">
+                <div class="calculation-section">
+                    <h1 class="text-5xl font-medium text-center">Selected- V</h1>
+                    <ul class="mt-8 unorder-list" id="order-list">
+                        
+                    </ul>
+                </div>
+
+                <div class="budget">
+                    <h1 class="text-5xl font-medium text-center mb-8">Budget</h1>
+                    <label for="player-cost-input">Per Player:</label>
+                    <input class="px-4 py-2 bg-gray-300 mb-8" type="text" id="player-cost-input">
+                    <button id="claculate-btn" class="ms-20 px-12 py-2 block bg-sky-500 text-white font-bold rounded">Calculate</button>
+
+                    <div class="mt-8">
+                        <h3 class="mb-4 text-center">Player Expenses        $<span id="player-expense">0000</span></h3>
+
+                        <label for="manager-cost">Manger:</label>
+                        <input type="text" id="manager-cost" class="px-4 py-2 bg-gray-300 mb-4">
+<br>
+                        <label for="coach-cost">Coach:</label>
+                        <input type="text" id="coach-cost" class="px-4 py-2 bg-gray-300">
+
+                         <button id="calaculate-total-btn" class="ms-8 px-12 py-2 block bg-sky-500 text-white font-bold rounded mt-8">Calculate Total</button>
+
+                        <div class="total flex align-center justify-between mt-4">
+                            <div>
+                                <h2>Total</h2>
+                            </div>
+
+                            <div>
+                                <h2 class="text-red-700">$<span id="total-value">0000</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       </section>
+
+       
+        
+       
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <!-- JS file Added Here -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
