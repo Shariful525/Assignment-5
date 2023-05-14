@@ -4,6 +4,14 @@ function selectPlayer(playerId){
     const li = document.createElement('li');
     li.innerText = playerName.innerText;
     ul.appendChild(li);
+
+    if(ul.children.length <= 5){
+        return playerName;
+    }
+    else{
+        alert('You are select more than 5, It is not allowed to select more 5.');
+        return false;
+    }
 }
 
 
